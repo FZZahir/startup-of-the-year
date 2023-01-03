@@ -1,0 +1,54 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url(header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+hr {
+    margin: 20px auto;
+    color: #F05F44;
+    border: 3px solid #F05F44;
+    max-width: 65px;
+    opacity: 1;  
+}
+
+h1{
+  font-size: 3rem;
+  color: whitesmoke;
+}
+
+
+.buffer{
+  height: 10rem;
+}
+
+.btn{
+  font-weight: 700;
+/* Makes it more round */
+  border-radius: 300px; 
+/*  capitlize here or do it like we did earlier with bootstrap class*/
+  text-transform: uppercase;
+}
+
+.btn-primary {  
+    background-color: #F05F44;  
+    border-color: #F05F44;  
+/*  Recall how we used to call .btn-primary:hover to change hover effect color. In New Bootstrap we no longer need to seperate out this class and instead include it in the btn-namespace class name  */
+    --bs-btn-hover-bg: #ee4b08; 
+    --bs-btn-hover-border-color: #ee4b08;
+}
+
+/*If we want the over effect to increase in animation size we will need to still specify the hover attribute.*/
+.btn-primary:hover{
+      border-width: 4px;
+}
+
+.btn-xl{
+  padding: 1rem 2rem;
+}
